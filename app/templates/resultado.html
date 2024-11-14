@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados do Questionário</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"> <!-- Se você tiver um CSS -->
+</head>
+<body>
+    <div class="container">
+        <h1>Resultados</h1>
+        <ul>
+            {% if probabilidades %}
+                {% for nome, probabilidade in probabilidades.items %}
+                    <li>{{ nome }}: {{ probabilidade|floatformat:2 }}%</li>
+                {% endfor %}
+            {% else %}
+                <li>Não foram encontradas probabilidades.</li>
+            {% endif %}
+        </ul>
+        <a href="{% url 'questionario' %}">Fazer outro questionário</a>
+    </div>
+</body>
+</html>

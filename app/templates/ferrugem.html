@@ -1,0 +1,247 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/CaféPest2-2.ico">
+    <title>CaféPest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'styleconteudo.css' %}">
+</head>
+
+<body>
+    <header>
+        <div class="cabecalho">
+            <a id="logo" href="/"></a>
+            <div id="formulario">
+                <form action="#" id="buscar">
+                    <input placeholder="Pesquisar" type="text" id="search-input">
+                    <input type="submit" value="Buscar">
+                </form>
+            </div>
+            <div id="buttons">
+                <a href="{% url 'login' %}" id="login">Login</a>
+            </div>
+            <div id="buttons">
+                <a href="/admin/" id="admin">Admin.</a>
+            </div>
+        </div>
+        <!-- <div class="container">
+                <nav>
+                        <li><a href="{% url 'noticia' %}">Notícias</a></li>
+                        <li><a href="/">Doenças do Café</a></li>
+                        <li><a href="/praga/">Pragas do Café</a></li>
+                        <li><a href="{% url 'questionario'}">Contact</a></li>
+                    </ul>
+                </nav>
+            </div> -->
+        <div class="conteinercard">
+             <div class="card">
+             <a href="/noticia/">Notícias</a>
+             </div>
+            <div class="card">
+            <a href="/">Doenças do Café</a>
+             </div>
+            <div class="card">
+            <a href="/praga/">Pragas do Café</a>
+        </div>
+        <div class="card">
+            <a href="/questionario/">Questionário de Analise</a>
+        </div>
+    </div>
+    </header>
+    <main>
+        <h1>Ferrugem do Cafeeiro</h1>
+        <h3>Ferrugem (Hemileia vastatrix)</h3> 
+        <h2>Origem da Doença</h2>
+        <p>A ferrugem do cafeeiro, conhecida cientificamente como Hemileia vastatrix, é uma das principais doenças que afetam a cultura do café e teve grande impacto na produção mundial ao longo da história. A doença foi identificada pela primeira vez em 1869, no Sri Lanka (então Ceilão), quando plantações inteiras de café foram destruídas, levando muitos produtores a substituir o café por outras culturas. Desde então, a ferrugem do cafeeiro se espalhou por diversas regiões produtoras, incluindo a América Latina.
+
+        <br> No Brasil, maior produtor de café do mundo, a ferrugem foi detectada pela primeira vez em 1970, em uma fazenda em Minas Gerais. Desde então, a doença tem sido uma preocupação constante para os cafeicultores. O fungo responsável pela ferrugem ataca as folhas do cafeeiro, formando manchas alaranjadas que reduzem a capacidade fotossintética da planta, o que leva a uma queda prematura das folhas e, consequentemente, uma diminuição na produtividade e qualidade dos grãos.</p>
+
+        <img src="https://i.ytimg.com/vi/28k3X21BfjA/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBEQaNVnPC1IiSIsMKUdRhuft7uEw" alt="">
+        
+        <h2>Agente Etiológico</h2>
+        <p>O agente etiológico da ferrugem do cafeeiro é o fungo Hemileia vastatrix. Esse fungo pertencente ao gênero Hemileia é o principal responsável pela doença, e sua infecção afeta principalmente as folhas do cafeeiro. A ferrugem é transmitida por esporos do fungo que se dispersam pelo vento, atingindo plantas saudáveis em condições favoráveis, como alta umidade e temperaturas amenas.
+        <br>A Hemileia vastatrix se caracteriza pela formação de manchas alaranjadas na parte inferior das folhas do cafeeiro, que são os locais onde os esporos se desenvolvem. Esses esporos, ao serem liberados, podem ser transportados para outras plantas, propagando rapidamente a infecção e comprometendo a saúde da planta.</p>
+        
+        <img src="https://maestrovirtuale.com/wp-content/uploads/2019/10/Figura_1_800px-Hemileia_vastatrix_Uredinium_02.jpg" alt="">
+
+        <h2>Condições Favoráveis </h2>
+    <p>As condições favoráveis para o desenvolvimento da ferrugem do cafeeiro, causada pelo fungo Hemileia vastatrix, incluem:</p>
+
+        <li>Temperatura: O fungo se desenvolve melhor em temperaturas amenas, geralmente entre 18°C e 25°C. No entanto, ele pode se reproduzir em uma faixa mais ampla, de 15°C a 28°C. Temperaturas superiores a 28°C ou abaixo de 15°C podem reduzir a atividade do fungo.</li>
+        
+       <li> Umidade: A alta umidade relativa do ar é essencial para a germinação dos esporos do fungo e sua dispersão. A ferrugem do cafeeiro prospera em condições de alta umidade, com valores superiores a 85% de umidade relativa do ar sendo ideais para o seu desenvolvimento.</li>
+        
+        <li>Chuvas frequentes: A presença de chuvas, especialmente no período de estação chuvosa, contribui para a umidade do ambiente, criando condições favoráveis para a infecção. A umidade excessiva e a água nas folhas promovem a germinação e a disseminação dos esporos.</li>
+        
+       <li>Falta de ventilação: Ambientes com pouco vento e vegetação densa podem favorecer a retenção de umidade nas plantas, aumentando as chances de infecção. Plantas mal ventiladas, com sombra excessiva, são mais suscetíveis à doença.</li>
+        
+       <li> Manejo inadequado: A falta de práticas de manejo, como a poda correta e a remoção de folhas infectadas, pode criar um ambiente ideal para o fungo se espalhar. O cultivo de variedades suscetíveis sem a devida resistência ao fungo também favorece a doença.</li>
+        
+    <p>Essas condições favorecem a propagação e o desenvolvimento da ferrugem, tornando o controle da doença um desafio, especialmente em regiões com clima quente e úmido, características típicas das principais áreas produtoras de café.</p>
+      
+        <h2>Disseminação da Doença</h2>
+
+    <p>A disseminação da ferrugem do cafeeiro, causada pelo fungo Hemileia vastatrix, ocorre principalmente por meio dos esporos do fungo. Esses esporos podem ser transportados por diversos mecanismos, o que contribui para a rápida propagação da doença entre as plantas. Abaixo estão os principais fatores e formas de disseminação:</p>
+
+        <li>Dispersão por vento: A principal forma de disseminação do fungo é através dos esporos que são liberados das lesões nas folhas infectadas. Esses esporos são leves e podem ser transportados por grandes distâncias pelo vento, atingindo novas plantas e iniciando novos focos de infecção.</li>
+
+        <li>Dispersão por água: A água das chuvas ou o orvalho também facilita a dispersão dos esporos. Quando a água entra em contato com as folhas infectadas, ela pode levar os esporos para outras partes da planta ou até para plantas vizinhas. A chuva é especialmente importante para a disseminação em áreas com alta umidade.</li>
+
+        <li>Tratores e equipamentos agrícolas: O uso de máquinas, tratores e equipamentos de cultivo nas plantações pode espalhar esporos de uma planta para outra, especialmente quando as máquinas entram em áreas infectadas e depois se movem para áreas não infectadas.</li>
+
+        <li>Mão de obra e materiais contaminados: Trabalhadores que manipulam as plantas ou utilizam ferramentas, como podadores e tesouras, sem a devida higienização, podem transferir esporos de uma planta para outra. Da mesma forma, sementes ou mudas contaminadas também podem ser uma fonte de disseminação da doença.</li>
+
+        <li>Roupas e calçados contaminados: O fungo pode ser transportado por roupas e calçados de trabalhadores, aumentando o risco de infecção em outras áreas da plantação.</li>
+
+        <li>Inoculação local: O fungo pode também se espalhar localmente dentro de uma planta, caso as condições de umidade e temperatura sejam favoráveis, especialmente em folhas jovens que estão mais suscetíveis.</li>
+
+    <p>Devido à rapidez com que o fungo pode se dispersar, a ferrugem do cafeeiro pode afetar grandes áreas em um curto período de tempo, se não houver um controle adequado. Isso torna a prevenção e o manejo da doença essenciais para evitar perdas significativas nas lavouras.</p>
+
+        <h2>Sistomas e Danos</h2>
+
+   <p>Os sintomas da ferrugem do cafeeiro, causados pelo fungo Hemileia vastatrix, incluem principalmente o aparecimento de manchas nas folhas, mas podem se estender a outros danos nas plantas. Aqui estão os principais sinais:</p>  
+
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8UJPqbJGH0m_I_H-jxauKcSglDhLNmh9arQ&s" alt="">
+
+
+    <h4>Sintomas:</h4>
+
+    <ul><b>Manchas alaranjadas nas folhas:</b></ul>
+
+   <li>O sintoma mais característico da ferrugem são pequenas manchas de cor alaranjada ou amarelada na parte inferior das folhas do cafeeiro, onde os esporos do fungo se desenvolvem.
+    Essas manchas podem se expandir, cobrindo grandes áreas das folhas.</li>
+
+    <ul><b>Rugosidade e deformação das folhas:</b><ul>
+
+    <li>À medida que a doença se avança, as folhas podem ficar mais rugosas, com ondulação ou deformação.
+    A parte superior das folhas (visível) pode começar a apresentar descoloração, tornando-se amarelada ou bronzeada, devido à perda de clorofila.</li>
+
+    <ul><b>Queda prematura das folhas:</b></ul>
+
+   <li>As folhas infectadas têm sua capacidade de fotossíntese comprometida, o que leva à desidratação e queda prematura.
+    A queda de folhas pode resultar em defoliamento significativo, especialmente durante a estação chuvosa, quando as condições são mais favoráveis ao fungo.</li>
+
+    <ul><b>Amarelecimento e secagem das folhas:</b></ul>
+
+    <li>O amarelecimento (clorose) e a secagem das folhas são comuns, afetando tanto as folhas mais velhas quanto as novas.
+    Esse processo enfraquece a planta e pode comprometer sua capacidade de crescer e produzir frutos de qualidade.</li>
+
+    <h4>Danos:</h4>
+
+    <ul><b>Perda de produtividade:</b></ul>
+
+    <li>A queda de folhas prejudica a fotossíntese e reduz a capacidade da planta de produzir nutrientes essenciais. Isso    leva a uma diminuição na produção de grãos de café. Em casos graves, a planta pode não ter folhas suficientes para se desenvolver adequadamente, comprometendo a produção de grãos.</li>
+
+    <ul><b>Enfraquecimento geral da planta:</b></ul>
+
+    <li>Com o enfraquecimento da planta devido à defoliagem e ao comprometimento da fotossíntese, o cafeeiro torna-se mais suscetível a outras doenças e pragas, criando um ciclo de dano contínuo.</li>
+
+    <ul><b>Redução da qualidade dos grãos:</b></ul>
+
+    <li>As plantas doentes geralmente produzem frutos de qualidade inferior, com menor peso, tamanho e qualidade do grão. Isso impacta diretamente na rentabilidade do café produzido.</li></ul>
+
+    <p>A ferrugem do cafeeiro pode causar grandes prejuízos econômicos, especialmente em áreas de grande produção de café. Plantios severamente afetados podem ter suas colheitas reduzidas em até 50% ou mais.
+    <br>O custo com controle da doença, incluindo o uso de fungicidas, manejo adequado das plantas e a substituição de cultivares, também é significativo.
+    <br>Em resumo, os danos causados pela ferrugem do cafeeiro são graves e podem comprometer tanto a produtividade quanto a qualidade do café, tornando o controle da doença essencial para a saúde das plantações e a manutenção da produção.</p>
+     
+    
+    <div class="carousel-container">
+        <button class="carousel-button prev">❮</button>
+        <div class="carousel">
+            <img src="https://i1.wp.com/3rlab.com.br/wp-content/uploads/2020/10/image3.jpg" alt="Imagem 1">
+            <img src="https://maisagro.syngenta.com.br/wp-content/uploads/2023/11/imagem_2_ferrugem-do-cafeeiro-e-os-impactos-para-as-lavouras-do-cafe.png" alt="Imagem 2">
+            <img src="https://mediasyg.pixit.com.br/s3fs-public/inline-images/imagem_3_ferrugem-do-cafeeiro-e-os-impactos-para-as-lavouras-do-cafe.png" alt="Imagem 3">
+            <img src="https://maisagro.syngenta.com.br/wp-content/uploads/2023/11/842x384_1-5.jpg" alt="Imagem 4">
+            <img src="https://super.abril.com.br/wp-content/uploads/2021/02/5.jpg?quality=70&strip=info&w=720&h=440&crop=1" alt="Imagem 5">
+        </div>
+        <button class="carousel-button next">❯</button>
+    </div>
+</main>
+
+<script>
+    // JavaScript para o carrossel
+    const prevButton = document.querySelector('.carousel-button.prev');
+    const nextButton = document.querySelector('.carousel-button.next');
+    const carousel = document.querySelector('.carousel');
+    let currentIndex = 0;
+
+    function showImage(index) {
+        const images = carousel.querySelectorAll('img');
+        const totalImages = images.length;
+        currentIndex = (index + totalImages) % totalImages;
+        carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+
+    prevButton.addEventListener('click', () => showImage(currentIndex - 1));
+    nextButton.addEventListener('click', () => showImage(currentIndex + 1));
+</script>
+</body>
+</html>
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>

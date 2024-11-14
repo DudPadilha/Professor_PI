@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="{% static 'app/css/style.css' %}"> <!-- Caminho para o arquivo CSS -->
+</head>
+<body>
+    <h1>Registro</h1>
+
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }} <!-- Renderiza o formulário como parágrafos -->
+        <button type="submit">Registrar</button>
+    </form>
+
+    {% if form.errors %}
+        <div class="alert alert-danger">
+            <strong>Erro(s):</strong>
+            <ul>
+                {% for field, errors in form.errors.items %}
+                    {% for error in errors %}
+                        <li>{{ error }}</li> <!-- Exibe cada erro individualmente -->
+                    {% endfor %}
+                {% endfor %}
+            </ul>
+        </div>
+    {% endif %}
+</body>
+</html>

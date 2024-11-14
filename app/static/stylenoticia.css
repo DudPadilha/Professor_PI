@@ -1,0 +1,243 @@
+/* Media Query para telas menores que 768px (tablets e celulares) */
+@media (max-width: 768px) {
+    .cabecalho {
+        flex-direction: column; /* Muda o cabeçalho para uma coluna para economizar espaço */
+        height: auto; /* Define uma altura automática para ajustar o conteúdo */
+        padding: 20px; /* Aumenta o preenchimento para melhorar o espaçamento */
+    }
+
+    #logo {
+        width: 80%; /* Reduz o tamanho do logo para caber em telas menores */
+        height: auto;
+        left: 0; /* Centraliza o logo */
+        position: relative; /* Altera para 'relative' para posicionamento mais flexível */
+        margin-bottom: 10px; /* Adiciona espaço abaixo do logo */
+    }
+
+    #login, #admin {
+        position: static; /* Remove a posição absoluta para permitir fluxo normal */
+        width: 100%; /* Define o botão para ocupar toda a largura */
+        text-align: center;
+        margin: 5px 0; /* Adiciona espaçamento entre os botões */
+    }
+
+    #formulario {
+        flex-direction: column; /* Ajusta o formulário para coluna */
+        align-items: stretch; /* Estica os elementos para ocupar toda a largura */
+        right: 0; /* Remove a posição absoluta */
+        margin-top: 10px; /* Adiciona espaçamento em cima */
+    }
+
+    #search-input {
+        width: 100%; /* Barra de pesquisa ocupa toda a largura */
+        margin-bottom: 10px; /* Adiciona espaço abaixo */
+        transition: none; /* Remove a transição para focar */
+    }
+
+    #buscar input[type="submit"] {
+        width: 100%; /* Botão de busca ocupa toda a largura */
+        border-radius: 5px; /* Arredonda todos os lados */
+    }
+}
+
+/* Media Query para telas menores que 480px (smartphones) */
+@media (max-width: 480px) {
+    .cabecalho {
+        padding: 10px;
+    }
+
+    #logo {
+        width: 100%;
+        height: auto;
+    }
+
+    #login, #admin {
+        font-size: 14px; /* Ajusta o tamanho da fonte para caber melhor em telas pequenas */
+        padding: 8px 10px;
+    }
+
+    #search-input {
+        font-size: 14px; /* Ajusta o tamanho da fonte */
+    }
+
+    #buscar input[type="submit"] {
+        font-size: 14px;
+    }
+}
+
+/* Estilo geral para os cartões */
+/* Estilo para os cartões no cabeçalho */
+.conteinercard{
+    display: flex; /* Utiliza flexbox para alinhar os cartões em linha */
+    margin: auto; /* Centraliza o contêiner */
+    width: 100%; /* Faz com que o contêiner ocupe toda a largura disponível */
+    max-width: 100%; /* Define uma largura máxima para não esticar demais em telas grandes */
+    background-color: #fff; /* Cor de fundo ao contêiner */
+    padding: 12px; /* Preenchimento ao redor dos cartões */
+    justify-content: center;
+    gap: 60px;
+}
+header .card {
+    font-family: 'Verdana'; /* Define a fonte do texto dentro do cartão */
+    cursor: pointer; /* Muda o cursor para um ponteiro ao passar sobre o cartão */
+    margin: 10px; /* Margem de 10 pixels ao redor de cada cartão */
+    display: flex; /* Utiliza flexbox para alinhar conteúdo */
+    align-items: center; /* Alinha o conteúdo verticalmente no centro */
+    justify-content: center; /* Alinha o conteúdo horizontalmente no centro */
+    padding: 10px; /* Preenchimento interno de 12 pixels em todos os lados do cartão */
+    border-radius: 5px; /* Bordas arredondadas com raio de 5 pixels */
+    min-width: 0px; /* Largura mínima do cartão */
+    width: 300px; /* Largura automática, ajustando-se ao conteúdo */
+    outline: none; /* Remove a borda padrão */
+    background-color: #f9f9f9; /* Cor de fundo clara para o cartão */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidade */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transições para animações suaves */
+    border: 1px solid #000;
+}
+
+/* Estilo para o link dentro dos cartões do cabeçalho */
+header .card > a {
+    text-align: center; /* Centraliza o texto dentro do link */
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: #333; /* Cor do texto do link */
+    font-size: 16px; /* Tamanho da fonte do link */
+    padding: 8px; /* Preenchimento ao redor do texto do link */
+    transition: color 0.3s ease; /* Transição suave para a cor do texto */
+}
+
+/* Efeito de hover para o link dentro dos cartões do cabeçalho */
+header .card > a:hover {
+    color: #669268; /* Muda a cor do texto do link ao passar o mouse */
+    font-weight: bold; /* Muda o peso da fonte para negrito */
+}
+/* Estilos gerais para a página */
+/* Noticia css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilo para cada notícia */
+.Noticia {
+    display: flex;
+    gap: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-items: flex-start;
+}
+
+/* Estilo para o conteúdo da notícia */
+.conteudo {
+    flex: 2;
+    padding-right: 15px;
+    border-right: 1px solid #ddd;
+}
+
+.Noticia h2 {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.Noticia p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Ajuste para o botão 'Saiba Mais' */
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 30px; /* Ajuste de padding para um tamanho adequado */
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-flex; /* Usa inline-flex para alinhar os itens lado a lado */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    margin-top: 10px;
+    font-size: 1.2rem;
+    gap: 5px; /* Espaçamento entre as palavras "Saiba" e "Mais" */
+    text-align: center;
+}
+.btn-primary:hover {
+    background-color: #0056b3;
+    color: #fff;
+    text-align: center;
+}
+
+/* Área de comentários ao lado da notícia */
+.comentarios {
+    flex: 1;
+    max-height: 200px;
+    overflow-y: auto;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Ajusta para que o conteúdo vá para o topo */
+    max-height: 90vh; /* Altura máxima ajustável para a tela */
+    overflow-y: auto;
+   
+}
+
+.comentarios h3 {
+    font-size: 1.4rem;
+    color: #555;
+    margin-top: 0;
+}
+
+.comentarios p {
+    font-size: 0.9rem;
+    margin: 5px 0;
+}
+
+.comentarios strong {
+    color: #333;
+}
+
+/* Estilo para o formulário de comentário */
+form {
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+    
+}
+
+form input[type="submit"] {
+    background-color: #6c757d;
+    color: #fff;
+    padding: 8px 100px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #5a6268;
+}
+
+/* Colocar o formulário de comentário no final da seção de comentários */
+.comentarios form {
+    margin-top: auto; /* Move o formulário para o final da coluna */
+   
+}
